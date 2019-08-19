@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.CreateNewAccountFragment"
+    android:background="@drawable/splash">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:textAlignment="center"
+        app:titleTextColor="@color/black">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/create_new_account"
+            android:textSize="@dimen/txt_size_xl"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/grey"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/Et_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Toolbar"
+        android:fontFamily=""
+        android:layout_margin="@dimen/dim_l"
+        android:hint="@string/name"
+        android:padding="@dimen/dim_l" />
+    <EditText
+        android:id="@+id/Et_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Et_Name"
+        android:layout_margin="@dimen/dim_l"
+        android:hint="@string/Email"
+        android:padding="@dimen/dim_l" />
+    <EditText
+        android:id="@+id/day_of_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Et_Email"
+        android:layout_margin="@dimen/dim_l"
+        android:hint="@string/day_of_date"
+        android:padding="@dimen/dim_l" />
+
+
+    <EditText
+        android:id="@+id/blood_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_margin="@dimen/dim_l"
+
+        android:hint="Blood_type"
+        android:padding="@dimen/dim_l" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_city1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_l"
+        android:autofillHints="city"
+
+        >
+
+
+
+
+    </androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+</LinearLayout>

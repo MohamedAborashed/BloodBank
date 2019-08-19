@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.LoginFragment"
+    android:background="@drawable/splash">
+
+    <ImageView
+        android:id="@+id/image_view_logo"
+        android:layout_width="@dimen/dim_20xl"
+        android:layout_height="@dimen/dim_20xl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_7xl"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_logo"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:gravity="center_vertical"
+            android:hint="@string/phone_number"
+            android:paddingStart="@dimen/dim_s"
+            android:paddingEnd="@dimen/dim_s" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_marginStart="@dimen/dim_m"
+            android:layout_marginTop="@dimen/dim_m"
+            android:layout_marginEnd="@dimen/dim_m"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:paddingStart="@dimen/dim_s"
+            android:paddingEnd="@dimen/dim_s" />
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Linear"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/txt_size_m"
+        android:layoutDirection="rtl"
+        android:text="تذكرنى" />
+
+    <TextView
+        android:id="@+id/Tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Linear"
+        android:layout_marginTop="@dimen/txt_size_m"
+        android:text="@string/forget_password" />
+
+
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:background="@color/green"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="1dp"/>
+
+    <Button
+        android:id="@+id/Btn_create_new_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_account"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="40dp"
+        android:background="@color/blue"
+        />
+
+
+</RelativeLayout>
